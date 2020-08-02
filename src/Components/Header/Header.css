@@ -1,0 +1,39 @@
+.Header{
+    grid-area: h;
+    background: #FFFFFF;
+    box-shadow: 0px 1.4945px 1.53979px rgba(0, 0, 0, 0.02), 0px 9.94853px 10.25px rgba(0, 0, 0, 0.03);
+}
+
+.taskName{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.accountHeader{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 1500px;
+}
+
+.accountName{
+    position: absolute;
+    top: 30px;
+}
+
+.accountImg{
+    position: absolute;
+    left: 115px;
+    top: 14px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.Action{
+    position: relative;
+    text-align: center;
+    top: 30px;
+    cursor: pointer;
+}

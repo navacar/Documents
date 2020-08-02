@@ -1,0 +1,38 @@
+:root{
+    --hiddenBoxVisibility: hidden;
+    --hiddenBoxOpacity: 0;
+}
+
+
+.actionBox{
+    opacity: var(--hiddenBoxOpacity);
+    visibility: var(--hiddenBoxVisibility);
+    transition: opacity 300ms;
+    position: absolute;
+    width: 289px;
+    height: 50px;
+    left: 695.5px;
+    top: 76px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1.4945px 1.53979px rgba(0, 0, 0, 0.02), 0px 4.13211px 4.25733px rgba(0, 0, 0, 0.025), 0px 9.94853px 10.25px rgba(0, 0, 0, 0.03), 0px 33px 34px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.Open{
+    position: absolute;
+    left: 35px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.Save{
+    position: absolute;
+    left: 150px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    background-color: #FFFFFF;
+}
