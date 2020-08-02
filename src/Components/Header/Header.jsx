@@ -11,11 +11,9 @@ const Header = () => {
         if (getComputedStyle(document.querySelector(':root')).getPropertyValue('--hiddenBoxVisibility') === "visible") {
             root.style.setProperty("--hiddenBoxVisibility", "hidden");
             root.style.setProperty("--hiddenBoxOpacity", "0");
-
         }else{
             root.style.setProperty("--hiddenBoxVisibility", "visible");
-            root.style.setProperty("--hiddenBoxOpacity", "1");
-            
+            root.style.setProperty("--hiddenBoxOpacity", "1"); 
         }
         
     }
@@ -30,7 +28,7 @@ const Header = () => {
                 <div className="accountName">
                     {accountName}
                 </div>
-                <img className="accountImg" src="/icons/Avatar.png" />
+                <img className="accountImg" src="/icons/Avatar.png"/>
             </div>
             <div onClick={actionOnClick} className="Action">
                 Действие
