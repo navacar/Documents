@@ -1,3 +1,12 @@
+:root{
+    --correspondenceTop: 150px;
+    --documentsRootVisibility: hidden;
+    --documentsRootOpacity: 0;
+    --correspondenceRootVisibility: hidden;
+    --correspondenceRootOpacity: 0;
+    --secondRootTextDecoration: none;
+}
+
 .navBar{
     grid-area: n;
     position: fixed;
@@ -8,18 +17,7 @@
     border: 1px solid rgba(62, 68, 91, 0.1);
     border-radius: 8px;
     padding: 20px; 
-    
+    font-size: 20px;
     z-index: 1;
 }
 
-.Documents{
-    position: absolute;
-    top: 100px;
-    text-decoration: none;
-}
-
-.Сorrespondence{
-    position: absolute;
-    top: 120px;
-    text-decoration: none;
-}

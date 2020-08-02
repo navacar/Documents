@@ -36,3 +36,8 @@
     border: none;
     background-color: #FFFFFF;
 }
+
+.actionBox :hover{
+    color:  rgb(73, 73, 246);
+    text-decoration: underline;
+}

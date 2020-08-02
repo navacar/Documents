@@ -4,6 +4,7 @@ import ActionBox from './ActionBox/ActionBox';
 
 const Header = () => {
     let accountName = "Пользователь"
+    let accountAvatar = "/icons/Avatar.png"
     let root = document.querySelector(':root');
 
     let actionOnClick = () => {
@@ -28,10 +29,10 @@ const Header = () => {
                 <div className="accountName">
                     {accountName}
                 </div>
-                <img className="accountImg" src="/icons/Avatar.png"/>
+                <img className="accountImg" src={accountAvatar}/>
             </div>
-            <div onClick={actionOnClick} className="Action">
-                Действие
+            <div  className="Action">
+                <span onClick={actionOnClick}>Действие</span>
             </div>
             <ActionBox />
 

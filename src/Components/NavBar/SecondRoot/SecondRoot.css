@@ -1,0 +1,71 @@
+.secondRoot a{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 65px;
+
+}
+.documentsRoot div{
+    visibility: var(--documentsRootVisibility);
+    opacity: var(--documentsRootOpacity);
+}
+
+.correspondenceRoot div{
+    visibility: var(--correspondenceRootVisibility);
+    opacity: var(--correspondenceRootOpacity);
+}
+
+.secondRoot div{
+    width: 191px;
+    height: 25px;
+    position: absolute;
+    left: 0px;
+    transition: opacity 700ms;
+    
+}
+
+
+.secondRoot a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.Contracts{
+    position: absolute;
+    top: 120px;
+}
+
+.Contracts .active{
+    text-decoration: underline;
+    color: blue;
+}
+
+.Declarations{
+    position: absolute;
+    top: 160px;  
+}
+
+.Declarations .active{
+    text-decoration: underline;
+    color: blue;
+}
+
+.Partners{
+    position: absolute;
+    top: 170px;  
+}
+
+.Partners .active{
+    text-decoration: underline;
+    color: blue;
+}
+
+.FNS{
+    position: absolute;
+    top: 210px;   
+}
+
+.FNS .active{
+    text-decoration: underline;
+    color: blue;
+}
