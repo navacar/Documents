@@ -1,0 +1,22 @@
+.Footer{
+    grid-area: f;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+
+    background: #F3F4F4;
+}
+
+.Date {
+    position: absolute;
+    right: 80px;
+    top: 30px
+}
+
+.fileName{
+    position: absolute;
+    top: 30px;
+    left: 250px;
+}
