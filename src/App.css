@@ -5,7 +5,7 @@
 
   	grid-template-areas:
   	"h h h" 
-	"n c d"
+	"n c c"
 	"n f f";
 
   	grid-template-rows: 80px 1fr 80px;

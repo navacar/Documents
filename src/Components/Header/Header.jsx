@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 import ActionBox from './ActionBox/ActionBox';
 
-const Header = () => {
+const Header = (props) => {
     let accountName = "Пользователь"
     let accountAvatar = "/icons/Avatar.png"
     let root = document.querySelector(':root');
@@ -12,11 +12,11 @@ const Header = () => {
         if (getComputedStyle(document.querySelector(':root')).getPropertyValue('--hiddenBoxVisibility') === "visible") {
             root.style.setProperty("--hiddenBoxVisibility", "hidden");
             root.style.setProperty("--hiddenBoxOpacity", "0");
-        }else{
+        } else {
             root.style.setProperty("--hiddenBoxVisibility", "visible");
-            root.style.setProperty("--hiddenBoxOpacity", "1"); 
+            root.style.setProperty("--hiddenBoxOpacity", "1");
         }
-        
+
     }
 
     return (
@@ -29,12 +29,15 @@ const Header = () => {
                 <div className="accountName">
                     {accountName}
                 </div>
-                <img className="accountImg" src={accountAvatar}/>
+                <img className="accountImg" src={accountAvatar} />
             </div>
-            <div  className="Action">
+            <div className="Action">
                 <span onClick={actionOnClick}>Действие</span>
             </div>
-            <ActionBox />
+            <ActionBox
+                fileName={props.fileName}
+                Dispatch={props.Dispatch}
+            />
 
         </header>
 

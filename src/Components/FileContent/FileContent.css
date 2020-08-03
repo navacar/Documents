@@ -1,0 +1,20 @@
+:root{
+    --placeHolderVisibility: visible;
+}
+
+.placeHolder{
+    visibility: var(--placeHolderVisibility);
+}
+.fileName{
+    grid-area: c;
+
+    position: absolute;
+    left: 680px;
+    top: 100px;
+}
+
+.docText{
+    position: absolute;
+
+    top: 150px;
+}

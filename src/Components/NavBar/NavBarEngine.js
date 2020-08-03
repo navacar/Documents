@@ -47,7 +47,4 @@ export const onClickСorrespondence = () => {
         correspondenceShow()
     }
     
-
-
-
 }

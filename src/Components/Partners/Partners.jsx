@@ -2,16 +2,12 @@ import React from 'react';
 import './Partners.css';
 import PartnerFile from './PartnerFile/PartnerFile';
 
-const Partners = () => {
-    let PartnerData = [
-        { Name: "Письмо 1", File: "Partner1.txt" },
-        { Name: "Письмо 2", File: "Partner2.txt" },
-        { Name: "Письмо 3", File: "Partner3.txt" }
-    ]
+const Partners = (props) => {
 
-    let PartnerElement = PartnerData.map(contract => <PartnerFile
+    let PartnerElement = props.Partners.PartnersData.map(contract => <PartnerFile
         Name={contract.Name}
         File={contract.File}
+        Dispatch={props.Dispatch}
     />)
 
 

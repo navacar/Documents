@@ -1,6 +1,5 @@
 import React from 'react';
 import './SecondRoot.css';
-// import { onClickDocuments } from '../NavBarEngine';
 import { NavLink } from 'react-router-dom';
 
 const SecondRoot = () => {

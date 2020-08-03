@@ -2,22 +2,17 @@ import React from 'react';
 import './Contracts.css';
 import ContractFile from './ContractFile/ContractFile';
 
-const Contracts = () => {
+const Contracts = (props) => {
 
-    let ContractData = [
-        { Name: "Договор 1", File: "Contract1.txt" },
-        { Name: "Договор 2", File: "Contract2.txt" },
-        { Name: "Договор 3", File: "Contract3.txt" }
-    ]
-
-    let ContractElement = ContractData.map(contract => <ContractFile
+    let ContractElement = props.Contracts.ContractsData.map(contract => <ContractFile
         Name={contract.Name}
         File={contract.File}
+        Dispatch={props.Dispatch}
     />)
 
     return (
 
-        <div className="contractsFiles">
+        <div className="partnersFiles">
             {ContractElement}
         </div>
 
