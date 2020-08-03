@@ -7,7 +7,7 @@ const Footer = () => {
     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
     var yyyy = today.getFullYear();
 
-    today = "Today is " + mm + '/' + dd + '/' + yyyy;
+    today = "Today is " + dd + '/' + mm + '/' + yyyy;
 
     var FileName = "Файл не выбран"
 
@@ -17,12 +17,9 @@ const Footer = () => {
             <time className="Date">
                 {today}
             </time>
-
             <div className="fileName">
                 {FileName}
             </div>
-
-
         </footer>
     )
 }
