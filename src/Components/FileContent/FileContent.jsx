@@ -11,8 +11,7 @@ const FileContent = (props) => {
             <div className="placeHolder">
                 {placeHolder}
             </div>
-            <article className="docText">
-                {props.documentText}
+            <article id="documentTXT" className="docText">
             </article>
         </div>
     )

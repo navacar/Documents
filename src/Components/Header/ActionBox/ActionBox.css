@@ -31,10 +31,13 @@
 .Save{
     position: absolute;
     left: 150px;
+    top: 4px;
     cursor: pointer;
     font-size: 20px;
     border: none;
     background-color: #FFFFFF;
+    color: black;
+    text-decoration: none;
 }
 
 .actionBox :hover{

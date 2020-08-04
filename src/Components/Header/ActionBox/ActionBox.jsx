@@ -4,6 +4,7 @@ import { loadTxtActionCreator } from '../../../State/State';
 
 const ActionBox = (props) => {
 
+    let href = "/documents/" + props.fileName
 
     let onClickOpen = () => {
         let root = document.querySelector(':root');
@@ -16,7 +17,8 @@ const ActionBox = (props) => {
     return (
         <div className="actionBox">
             <button onClick={onClickOpen} className="Open">Открыть</button>
-            <button className="Save">Сохранить</button>
+            {/* <button className="Save" href={href} download>Сохранить</button> */}
+            <a className="Save" href={href} download>Сохранить</a>
         </div>
     )
 }
