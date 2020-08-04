@@ -37,8 +37,6 @@ let Store = {
         },
 
         fileName: 'никакой',
-
-        documentText: 'Djn',
     },
 
     subscribe(observer) {
@@ -57,16 +55,14 @@ let Store = {
 
     loadTxt() {
         
-        let text = fetch("/documents/" + this._State.fileName)
+        fetch("/documents/" + this._State.fileName)
             .then(function (responce) {
                 return responce.text()
             })
             .then(function (data) {
                 document.getElementById('documentTXT').innerHTML = data
             })
-
-            console.log(text)
-        this._State.documentText = text
+    
         this._callSubscriber()
         
     },

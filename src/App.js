@@ -35,9 +35,7 @@ function App(props) {
 					<Declaration
 						Declaration={props.State.Declaration}
 						Dispatch={props.Dispatch} />} />
-				<FileContent
-					documentText={props.State.documentText}
-				/>
+				<FileContent />
 			</div>
 			<Footer fileName={props.State.fileName} />
 		</div>
