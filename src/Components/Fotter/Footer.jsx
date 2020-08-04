@@ -8,7 +8,7 @@ const Footer = (props) => {
     var yyyy = today.getFullYear();
 
     today = "Today is " + dd + '/' + mm + '/' + yyyy;
-    var openFile = "Открыт файл: " + props.fileName
+    var openFile = "Открываемый файл: " + props.fileName
         
     return (
         <footer className="Footer">
